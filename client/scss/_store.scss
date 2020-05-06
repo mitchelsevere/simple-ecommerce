@@ -1,0 +1,68 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+#shop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.shop-head {
+  display: block;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  color: #333;
+  img {
+    opacity: 1;
+    width: 100%;
+    margin: 15px 0;
+    transition: opacity .3s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+}
+
+.cart {
+  opacity: 1;
+  background:  #2ecc71 ;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 15px;
+  border: none;
+  transition: opacity .3s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+.price {
+  font-size: 1.1rem;
+}
+
+.shop-cart {
+  padding: 15px 30px;
+  text-align: right;
+  button {
+    padding: 15px;
+    border: none;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  .purchase {
+    background:  #FFC300; 
+  }
+}
